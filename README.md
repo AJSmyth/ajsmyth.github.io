@@ -1,1 +1,0 @@
-# ajsmyth.github.io
