@@ -70,7 +70,7 @@
     <div class="row g-0 align-items-stretch card-shrink">
       <div class="col-sm-4 mb-3 mb-sm-0">
         <div class="card semi-transparent h-100 border-remove-left">
-          <img style="border-radius: 15%;" class="opacity-100 card-img-top  p-3 mx-auto d-block" src="assets/placeholder.webp"/>
+          <img style="border-radius: 50%; width: 80%;" class="mx-auto opacity-100 card-img-top py-3 mx-auto d-block" src="assets/headshot.jpeg"/>
         </div>
       </div>
       <div class="col-sm-8">
@@ -96,23 +96,22 @@
       <p>If you're just looking for a quick example of my work, I've included some snippets of my favorite (publically sharable) work. Check out the <a href="projects/cansat.html">Full Writeup</a> if you feel so inclined.</p>
       <h3>PCB Design</h3>
       The PCB was designed using Altium. The microcontroller we used was a STM32F103, due to the prevalence of cheap Chinese development boards with this variant. It was also perfectly sufficient for our needs. We integrated several sensors in order to meet competition requirements. All boards were hand soldered with hot air and irons.
-      <div class="altium-ecad-viewer w-75 mx-auto m-3"
-        data-project-src="https:∕∕github.com/AJSmyth/ajsmyth.github.io/bin/2024_Prototype2.zip"
-        data-enabled-views='sch,bom,3d'
+      <div class="altium-ecad-viewer mx-auto m-3 altium-scaling"
+        data-project-src="https://github.com/AJSmyth/ajsmyth.github.io/raw/refs/heads/main/bin/2024_Prototype2.zip"
+        data-enabled-views='sch,bom,pcb,3d'
         data-active-view='3d'
         style="border-radius: 0px 0px 4px 4px; height: 500px;
                 
               border-color: rgb(241, 241, 241);">
       </div>
       <h3>Gallery</h3>
-      We ended up placing 4th in the world! While not technically a podium place in most cases, for this competition it was. Thirty teams were selected to participate based on performance in Preliminary and Critical Design Reviews, which were presented to judges throughout the season. Ultimately, our camera system malfunctioned, which prevented us from taking a higher podium placing.
-    <div id="carousel" class="carousel slide w-75 mx-auto m-3">
+      We ended up placing 4th in the world! While not technically a podium place in most cases, for this competition it was. Thirty teams were selected to participate based on performance in Preliminary and Critical Design Reviews, which were presented to judges throughout the season. 
+    <div id="carousel" class="carousel slide mx-auto m-3 altium-scaling">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="PCB Closeups"></button>
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="PCB Close Ups"></button>
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="PCB Close Ups"></button>
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="UCI CanSat Team"></button>
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Payload Preparation"></button>
       </div>
       <div class="carousel-inner ratio ratio-16x9 d-flex justify-content-center align-items-center">
         <div class="carousel-item active">
@@ -176,17 +175,23 @@
       margin-left: auto;
       margin-right: auto;
     }
-  .splash {
-        background-image: url('assets/banner.jpeg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        overflow: hidden;
+    .splash {
+          background-image: url('assets/banner.jpeg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          overflow: hidden;
+      }
+    .altium-scaling {
+      width: 65%; 
     }
   }
   @media (max-width: 575.58) {
     .splash {
       background-color: #f8f9fa;
+    }
+    .altium-scaling {
+      width: 95%; 
     }
   }
   body {
@@ -199,11 +204,6 @@
     }
   .semi-transparent {
     background-color: rgba(255, 255, 255, 0.90);
-  }
-  .carousel-image {
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
   }
 </style>
 </html>
