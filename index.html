@@ -11,7 +11,7 @@
 <body class="bg-light">
   <nav class="navbar navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand">My Portfolio</a>
+      <a class="navbar-brand">Portfolio &mdash; AJ Smyth</a>
     </div>
   </nav>  
   <main>
@@ -39,14 +39,14 @@
   </div>
   <div class="container-xl bg-white px-3 pt-3 pb-5">
       <h1>Summary</h1>
-      <p>I graduated from the University of California, Irvine in June of 2024 with a Bachelor of Science in Computer Engineering. While at UCI, I was involved with a few engineering projects and I also was able to complete internships with Skyworks and Rekovar during this time. After graduating, I continued with Rekovar as an Embedded Systems Engineer. Due to the nature of industry projects, there's not a whole lot of work products I can display. This portfolio is a work in progress, so please excuse the brevity.
+      <p>I graduated from the University of California, Irvine in June of 2024 with a Bachelor of Science in Computer Engineering. While at UCI, I was involved with engineering projects and completed internships with Skyworks and Rekovar. After graduating, I continued with Rekovar as an Embedded Systems Engineer. Due to the nature of industry projects, there's not a whole lot of work products I can display. 
 
       <h1>Featured Project</h1>
-      <p>I've included some snippets of my favorite (publically sharable) work. At UCI I was electrical lead for the CanSat team. For this competition we designed a landing probe which was required to keep a raw egg safe during launch, descent, and impact while transmitting telemetry data throughout. Our design utilized a multi-stage heat shield which decreased the probe's speed before deploying a parachute. We collected and transmitted telemetry data in real time, consisting of accelerometer, gyroscope, airspeed (via pitot tube), GPS, barometric pressure, battery charge, current draw, and more. All systems and telemetry performed perfectly during launch day, aside from the camera. Due to intermittent overcurrent issues, we ultimately decided to disable it just before launch.
+      <p>I've included some snippets of my favorite publically sharable work. At UCI I was electrical lead for the CanSat team. For this competition we designed a landing probe designed to keep an egg safe during a rocket launch to 1km while transmitting telemetry data throughout. Our design utilized a multi-stage heat shield which decreased the probe's speed before deploying a parachute. We collected and transmitted telemetry data in real time, consisting of accelerometer, gyroscope, airspeed (via pitot tube), GPS, barometric pressure, battery charge, current draw, and more. All systems and telemetry performed perfectly during launch day, aside from the camera. Due to intermittent overcurrent issues, we decided to disable it just before launch.
       <h3>PCB Design</h3>
-      <p>The PCB was designed using Altium. The microcontroller we used was a STM32F103, due to the prevalence of cheap Chinese development boards with this variant. It was also perfectly sufficient for our needs. We integrated several sensors in order to meet competition requirements. All boards were hand soldered. We developed requirements during meetings with the operations, mechanical, and software subteams before designing the PCB.Component selection was performed after developing power and link budgets to ensure compliance with our requirements.</p>
+      <p>The PCB was designed using Altium. The microcontroller chosen was an STM32F103 due to the prevalence of cheap Chinese development boards with this variant. It was also sufficient to meet our telemetry and data collection requirements. We integrated several sensors in order to meet competition requirements. We developed requirements during meetings with the operations, mechanical, and software subteams before designing the PCB.Component selection was performed after developing power and link budgets to ensure compliance with our requirements.</p>
 
-      <p>I wanted our design to follow an iterative design process. We first constructed a breadboarded circuit to give the software team something to work with. The first PCB revision simply connected breakout boards for each respective sensor to an STM32 BluePill. This PCB met all of our requirements aside from power consumption and weight, allowing the software and mechanical teams to make progress and perform basic integration testing early on. Due to these stringent weight an power consumption requirements, we developed a second revision with switching converters, less breakout boards, and proper keepouts for optimized RF performance.</p>
+      <p>I wanted our design to follow an iterative design process. We first constructed a breadboarded circuit to give the software team something to work with. The first PCB revision simply connected breakout boards for each respective sensor to an STM32 Blue Pill. This PCB met all of our requirements aside from power consumption and weight, allowing the software and mechanical teams to perform basic integration testing early on. Due to these stringent weight an power consumption requirements, we developed a second revision with switching converters, less breakout boards, and proper keepouts for optimized RF performance. All boards were hand soldered.</p>
       <div class="altium-ecad-viewer mx-auto m-3 altium-scaling"
         data-project-src="https://github.com/AJSmyth/ajsmyth.github.io/raw/refs/heads/main/bin/2024_Prototype2.zip"
         data-enabled-views='sch,bom,pcb,3d'
@@ -56,7 +56,7 @@
               border-color: rgb(241, 241, 241);">
       </div>
       <h3>Gallery</h3>
-      <p>We ended up placing 4th in the world! While not a podium place in most other compeitions, for this one it was. Thirty teams were selected to participate based on performance in Preliminary and Critical Design Reviews, which were presented to judges throughout the season. Below are some pictures of our manufactured boards, and various competition pictures.</p>
+      <p>We ended up placing 4th in the world! While not a podium place in most other compeitions, for this one it was. Thirty teams were selected to participate based on performance in Preliminary and Critical Design Reviews, which were presented to judges throughout the season. Below are some pictures of our manufactured boards, and various other pictures from the competition.</p>
     <div id="carousel" class="carousel slide mx-auto m-3 altium-scaling">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="PCB Closeups"></button>
